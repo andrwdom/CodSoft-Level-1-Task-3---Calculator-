@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b8b8b8;
+
+}
+
+h1 {
+    font-family: "Playwrite AU QLD", cursive;
+    text-align: center;
+    font-weight: 600;
+    font-size: 5rem;
+    color: white;
+}
+
+#calculator {
+    font-family: "Anton SC", sans-serif;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 400px;
+
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 4rem;
+    border: none;
+    background-color: #4E4C4E;
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: #4E4C4E;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.operators {
+    color: #4E4C4E;
+    background-color: white;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 60%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 70%);
+    ;
+}
+
+@media (max-width: 600px) { 
+    h1 {
+        font-size: 3rem;
+    }
+
+    #calculator {
+        max-width: 300px;
+    }
+
+    #display {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    #keys {
+        gap: 12px;
+    }
+}
